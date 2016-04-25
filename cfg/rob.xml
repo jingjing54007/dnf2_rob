@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rob>
+  <common>
+    <add key="group_id" value="148" desc=""/>
+    <add key="group_name" value="dnf2" desc=""/>
+  </common>
+  <userlist>
+    <add key="windhe" value="1" desc="是否发送重复补送预警邮件给该用户: 0-不发送 1-发送"/>
+    <add key="v_wxywu" value="1" desc="是否发送重复补送预警邮件给该用户: 0-不发送 1-发送"/>
+  </userlist>
+  <log>
+    <add key="DEBUG" value="1" desc="是否打印该级别日志: 0-不打印 1-打印"/>
+    <add key="INFO" value="1" desc="是否打印该级别日志: 0-不打印 1-打印"/>
+    <add key="WARNING" value="1" desc="是否打印该级别日志: 0-不打印 1-打印"/>
+    <add key="ERROR" value="1" desc="是否打印该级别日志: 0-不打印 1-打印"/>
+  </log>
+  <interface>
+    <common_interface>
+      <add key="vip_ip" value="172.27.129.27" desc=""/>
+      <add key="vip_port" value="5694" desc=""/>
+      <add key="vip_cmd" value="31000" desc=""/>
+
+      <add key="web_http_proxy" value="10.137.130.179:80" desc=""/>
+      <add key="web_http_url" value="http://kf.cm.com/datainterface/ext_answer.php" desc=""/>
+      <add key="web_http_proxy_R" value="10.140.13.16:80" desc=""/>
+      <add key="web_http_url_R" value="http://hlpupd.game.qq.com/cgi-bin/helper/app_rob.cgi" desc=""/>
+	  
+	  <add key="web_http_proxy_T" value="10.132.24.70:80" desc=""/>
+	  <add key="web_http_url_T" value="http://hlpupd_test.game.qq.com/cgi-bin/helper/app_rob.cgi" desc=""/>
+	  
+      <add key="cmlogserver" value="http://172.27.12.158/cgi-bin/140804/logmanagerserver" desc=""/>
+      <add key="dbserver" value="http://172.27.12.158/cgi-bin/140804/dbmanagerserver" desc=""/>
+      <add key="ipserver" value="http://10.240.174.47:8081/ipaddress?ip=" desc=""/>
+   
+			<add key="reply_mobile_app_host_main" value="10.153.132.164" desc="恢复手机APP: 主-10.153.132.164, 备-10.130.88.15" type=""/>
+			<add key="reply_mobile_app_port_main" value="8889" desc="恢复手机APP: 8889" type=""/>
+			
+			<add key="reply_mobile_app_host_prepare" value="10.130.88.15" desc="恢复手机APP: 主-10.153.132.164, 备-10.130.88.15" type=""/>
+			<add key="reply_mobile_app_port_prepare" value="8889" desc="恢复手机APP: 8889" type=""/>
+    </common_interface>
+    <ics_valid>
+      <add key="size_of_ics_one" value="100" desc="100"/>
+      <add key="size_of_ics_two" value="60" desc="60"/>
+      <add key="size_of_ics_three" value="50" desc="50"/>
+      <add key="size_of_ics_four" value="50" desc="50"/>
+      <add key="size_of_ics_five" value="50" desc="50"/>
+      <add key="size_of_ics_six" value="100" desc="100"/>
+      <add key="size_of_ics_offline" value="1" desc="离线分析模块读取单据数量:100"/>
+      <add key="role_level" value="18" desc="等级限制"/>
+      <add key="create_due" value="15" desc="申诉超过create_due不合法；普通用户暂定为15天，VIP为20天"/>
+      <add key="receve_double" value="90" desc="receive_doble天内重复来单不受理； 普通用户暂定为180天，VIP为90天"/>
+      <add key="receve_vip_double" value="60" desc=""/>
+      <add key="block_day" value="5" desc="角色被封冻大于block_day不合法，5天"/>
+      <add key="item_sums_toplimit" value="50" desc="物品处理限制"/>
+      <add key="ics_source" value="(10,30)" desc="单据来源字段,可区分正式、测试单据(10--O线正式、30--R线正式、40--测试、0--业受手动录入)"/>
+	  
+	    <add key="receve_double" value="60" desc="receve_doble天内重复来单不受理；普通用户暂定为60天"/>
+      <add key="receve_vip_1" value="60" desc="VIP1为60天"/>
+      <add key="receve_vip_2" value="45" desc="VIP2为45天"/>
+      <add key="receve_vip_3" value="30" desc="VIP3为30天"/>
+    </ics_valid>
+    <authority>
+      <add key="query" value="asherzhou,xiaoxingwang,aibyli,rechardyang,asherzhou,lilymao,mayli,frankzhuang" desc=""/>
+      <add key="operate" value="asherzhou,rechardyang,aibyli,lilymao,mayli,frankzhuang" desc=""/>
+    </authority>
+    <ics_oper>
+      <add key="ics_id_send_only_one" value="rob-16021919533318543619" desc="读取指定一条单据的单据ID"/>
+      
+      <add key="ics_info_list" value="11073" desc=""/>
+      <add key="ics_info_list_new" value="15055" desc="测试正式环境分离"/>
+      <add key="ics_info_list_20" value="6477" desc=""/>
+      <add key="ics_states_update" value="6189" desc=""/>
+      <add key="ics_stat_add" value="5194" desc=""/>
+      <add key="ics_info_role_update" value="5196" desc=""/>
+      <add key="ics_rob_slot_insert" value="5346" desc=""/>
+      <add key="ics_apply_repeat_uin" value="33811" desc=""/>
+      <add key="ics_slot_runstat_update" value="5462" desc=""/>
+      <add key="ics_stat_item_add" value="5480" desc=""/>
+      <add key="ics_item_flow_query_proc" value="5520" desc=""/>
+      <add key="ics_item_trace_general" value="5531" desc=""/>
+      <add key="ics_item_flow_runstat_update" value="5533" desc=""/>
+      <add key="ics_item_send_query_proc" value="5545" desc=""/>
+      <add key="ics_item_send_runstat_update" value="5548" desc=""/>
+      <add key="ics_stat_result_update" value="5549" desc=""/>
+      <add key="rob_ics_need_replay_del_list" value="6175" desc=""/>
+      <add key="ics_reply_update" value="6195" desc=""/>
+      <add key="ics_item_send_success_query" value="8799" desc=""/>
+      <add key="ics_get_role_list" value="5190" desc=""/>
+      <add key="ics_get_role_info" value="5188" desc=""/>
+      <add key="ics_get_role_ban_info" value="5193" desc=""/>
+      <add key="login_logout_log" value="5287" desc=""/>
+      <add key="ics_role_money_sub_query" value="5421" desc=""/>
+      <add key="ics_rob_logout_proc_list" value="5418" desc=""/>
+      <add key="ics_item_conf_info" value="5423" desc=""/>
+      <add key="ics_role_item_flow_query" value="5430" desc=""/>
+      <add key="ics_item_flow_general" value="5437" desc=""/>
+      <add key="ics_item_send" value="5547" desc=""/>
+      <add key="get_vip_info" value="7581" desc="查询心悦俱乐部内部会员" type=""/>
+      <add key="ics_stat_item_send" value="11890" desc="获取单据物品统计项"/>
+      <add key="ics_info_one" value="13321" desc="读取指定某一条单据"/>
+      <add key="rob_ics_need_reply_one" value="7034" desc="读取待回复指定某一条单据"/>
+      <add key="rob_ics_info_dnf" value="14077" desc="【盗号自助-V1.0】DNF-读取单据（添加离线分析）"/>
+      <add key="ics_info_one_dnf" value="14078" desc="【盗号自助-V1.0】DNF-读取指定单据（添加离线分析）"/>
+      
+      <add key="ics_get_fall_out" value="10007" desc="获取点券fall_out信息" type=""/>
+
+      <add key="ics_item_send_result_select" value="9717" desc="查询重复补送物品列表" type=""/>
+      <add key="ics_item_send_info_insert" value="9718" desc="插入补送物品列表" type=""/>
+      <add key="ics_item_send_result_update" value="9719" desc="更新补送物品结果" type=""/>
+      <add key="ics_item_send_warn_mail_update" value="9720" desc="更新邮件预警次数" type=""/>
+      
+      <add key="rob_offline_login_log" value="14055" desc="【盗号自助-V1.0】离线异常登录" type=""/>
+      <add key="rob_offline_logout_log" value="14058" desc="【盗号自助-V1.0】离线异常登出" type=""/>
+      
+	  
+    </ics_oper>
+  </interface>
+  <reply_info>
+    <add key="reply_url" value="http://172.16.131.5/cgi-bin/external_call/ext_answer" desc=""/>
+    <add key="reply_title" value="【大明龙权】关于盗号受理结果反馈" desc=""/>
+    <add key="reply_detail" value="reply_1|reply_2|reply_4|reply_5|reply_6|reply_7|reply_8" desc=""/>
+    <add key="reply_1" value="您的心情我们非常理解，不过很抱歉，由于您账号的被盗已经超过我们受理的时间范围（从被盗开始计算15天），所以我们无法核实您所提供帐号的被盗情况，还请您谅解。" desc=""/>
+    <add key="reply_2" value="您的心情我们非常理解，不过很抱歉，被盗申诉系统只能在60天内为您的同一账号下的同一角色处理一次。对于我们无法再次为您核实被盗情况，我们深表歉意。" desc=""/>
+    <add key="reply_4" value="关于您所咨询的疑问，经核实您提供的信息我们后台查询不到相关数据，烦请您再核实一下您所填写的信息与出现问题的信息是否一致，以便我们为您核实处理，由此给您带来的不便，我们深表歉意。同时，也希望您能够理解与配合我们的工作。" desc=""/>
+    <add key="reply_5" value="请您提供正确的被盗时间，以便我们为您详细核实，目前您提供的被盗前最后一次登录时间不正确（被盗前最后一次登录时间比发现被盗时间晚），我们无法为您核实，由此给您带来的不便，我们深表歉意。" desc=""/>
+    <add key="reply_6" value="经详细为您核实，您被盗的物品我们已经为您尽量找回了，还请您多多留意一下游戏内的邮件，若您在七个工作日内没有接收到被盗道具，说明您的物品已经无法找回了。由此给您带来的不便，我们深表歉意。同时，也希望您能够理解与配合我们的工作。" desc=""/>
+    <add key="reply_7" value="您的心情我们非常理解，不过很抱歉，经详细为您核实，您的账号因为被封停，无法进行被盗申诉，还请您知晓！" desc=""/>
+    <add key="reply_8" value="您的心情我们非常理解，不过很抱歉，由于无法核实您所反馈的被盗情况，我们无法进一步为您核实处理，还请您谅解。账号、虚拟物品被盗和现实中被盗案件一样属于法律的调查和管辖范畴，其受理单位应该为玩家所在地区的公安机关的网监部门。小Q建议您联系当地网监来处理此情况。谢谢！" desc=""/>
+  </reply_info>
+</rob>
